@@ -98,7 +98,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color:  #fff;f;
+    color:  #ffff;
     font-size: 35px;
     font-weight: 600;
 }
@@ -219,10 +219,11 @@ section .title::after{
 }
 .about .about-content .left{
     width: 45%;
+    text-align: center;
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: auto;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -238,7 +239,7 @@ section .title::after{
     color:  rgb(253, 0, 51);
 }
 .about .about-content .right p{
-    text-align: justify;
+    text-align: left;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -273,7 +274,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
-    text-align: justify;
+    text-align: left;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -358,7 +359,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .contact .contact-content .left p{
-    text-align: justify;
+    text-align: left;
 }
 .contact .contact-content .left .icons{
     margin: 10px 0;
@@ -397,6 +398,73 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+.strengths-heading, .goals-heading {
+    margin-top: 20px;
+}
+.skills-content{
+    align-items: unset !important;
+}
+@media only screen and (max-width: 992px){
+    .about-content{
+        flex-direction: column;
+    }
+    .about .about-content .right {
+        width: unset;
+    }
+    .about .about-content .left {
+        width: unset;
+    }
+    .about .about-content .left img {
+        height: 250px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    section {
+        padding: 60px;
+    }
+    .skills-content{
+        flex-direction: column-reverse;
+    }
+    .skills .skills-content .column {
+        width: 100%;
+    }
+    .max-width {
+        padding: 0 0;
+    }
+    .column.right {
+        margin-bottom: 20px;
+    }
+    .navbar {
+        padding: 20px 30px;
+    }
+    .navbar.sticky {
+        padding: 15px 30px;
+    }
+}
+@media only screen and (max-width: 576px){
+    section {
+        padding: 30px;
+    }
+    section .title {
+        font-size: 28px;
+    }
+    section .title::after {
+        font-size: 14px;
+    }
+    .home .home-content .text-2 {
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    .contact .contact-content .info .sub-title {
+        line-break: anywhere;
+    }
+    .home .home-content .text-3 {
+        font-size: 22px;
+    }
+    ul.menu {
+        display: none;
+    }
 }
 
 
